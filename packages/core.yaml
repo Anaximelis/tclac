@@ -320,15 +320,25 @@ climate:
     # Verdampfertemperatur der Inneneinheit
     evaporator_temperature:
       name: "${humanly_name} Verdampfertemperatur"
+      disabled_by_default: true
+      entity_category: diagnostic
     # Kompressortemperatur der Außeneinheit
     compressor_temperature:
       name: "${humanly_name} Kompressortemperatur"
+      disabled_by_default: true
+      entity_category: diagnostic
     # Kompressorfrequenz in Hz
     compressor_frequency:
       name: "${humanly_name} Kompressorfrequenz"
+      disabled_by_default: true
+      entity_category: diagnostic
     # Netzspannung in V (nur gültig solange der Kompressor läuft)
     supply_voltage:
       name: "${humanly_name} Netzspannung"
+      disabled_by_default: true
+      entity_category: diagnostic
     # Rohdaten der noch nicht vollständig dekodierten Diagnose-Bytes 34–59
     diagnostic_hex:
       name: "${humanly_name} Diagnose-Bytes (34-59)"
+      disabled_by_default: true
+      entity_category: diagnostic
